@@ -31,7 +31,7 @@
     position: absolute;
     top: 0;
     z-index: 3;
-    transform: rotate(112deg);
+    transform: rotate(100deg);
 }
 
 .item .refri{
@@ -66,4 +66,19 @@
 
 #next{
     right: 30px;
+}
+
+@keyframes toActive {
+    from{
+        top: 100%;
+        opacity: 0%;
+    }
+}
+
+.item.active img.fruit{
+    animation: toActive 0.5s ease-in-out;
+}
+
+.item.active .title{
+    animation: toActive 0.5s ease-in-out;
 }
